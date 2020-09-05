@@ -1,8 +1,8 @@
 # BlazorProductivityProject
 
-This project is a try to gather all the "right" solutions for server-side blazor in one place.
+This project tries to gather all the solutions and best-practices for server-side blazor in one place.
 
-I didn't find any projects for rtl and farsi language, so I hope this will help those who will start a Blazor Server-side project.
+I didn't find any project for rtl and farsi language, so I hope this will help.
 
 <h3>Solutions:</h3>
 <ol>
@@ -10,6 +10,10 @@ I didn't find any projects for rtl and farsi language, so I hope this will help 
   <li>File upload on server - FileService</li>
   <li>Product Gallery</li>
   <li>Parent-Child Communication</li>
+  
+  <li>Farsi font - Shabnam - with digits</li>
+  <li>Bootstrap RTL</li>
+  <li>Scoped ApplicationDbContext</li>
   </ol>
 
 <h3>Sources:</h3>
