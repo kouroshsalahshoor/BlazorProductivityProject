@@ -16,6 +16,16 @@ namespace BlazorProductivityProject.Services
             _environment = environment;
         }
 
+        public string GetFileName(string directory, string fileName)
+        {
+            var result = string.Empty;
+            var fileNames = GetFileNames(directory, fileName);
+            if (fileNames.Any())
+            {
+                result = fileNames.FirstOrDefault();
+            }
+            return result;
+        }
         public string[] GetFileNames(string directory, string fileName)
         {
             var folderPath = Path.Combine(_environment.WebRootPath, $"uploads\\{directory}");

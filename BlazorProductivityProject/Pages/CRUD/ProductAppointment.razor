@@ -5,11 +5,11 @@
 
 @if (_show)
 {
-    @*<AppointmentComponent Model="_model"></AppointmentComponent>*@
+    <AppointmentComponent Model="_model" OnClickShowProductDetails="showProductDetails"></AppointmentComponent>
 }
 else
 {
-    <ProductDetailsComponent Model="_model"></ProductDetailsComponent>
+    <ProductDetailsComponent Model="_model" OnClickShowAppointment="showAppointment"></ProductDetailsComponent>
 }
 
 @code {
@@ -24,9 +24,10 @@ else
     {
         _model = new Appointment();
         _model.Date = DateTime.Now;
-        _model.Product = _db.Products.Include(x=>x.Category).SingleOrDefault(x=>x.Id == ProductId);
+        _model.Product = _db.Products.Include(x => x.Category).SingleOrDefault(x => x.Id == ProductId);
+        _model.ProductId = _model.Product.Id;
     }
 
-    void show() => _show = true;
-    void hide() => _show = false;
+    void showAppointment() => _show = true;
+    void showProductDetails() => _show = false;
 }

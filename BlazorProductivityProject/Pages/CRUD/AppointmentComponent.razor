@@ -1,5 +1,75 @@
-﻿
+﻿@inherits OwningComponentBase<ApplicationDbContext>
+
+<div class="p-4 border row">
+    <EditForm class="col-8" Model="Model" OnValidSubmit="validSubmit">
+        <div class="form-group row">
+            <div class="col-8 offset-4">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Customer Name</div>
+            <div class="col-8"><InputText @bind-Value="@Model.CustomerName" class="form-control" /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Customer Email</div>
+            <div class="col-8"><input type="email" @bind="@Model.CustomerEmail" class="form-control" /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Customer Phone</div>
+            <div class="col-8"><input type="tel" @bind="@Model.CustomerPhone" class="form-control" /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Appointment Date</div>
+            <div class="col-8"><input type="date" @bind="@Model.Date" class="form-control" /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4"><a href="/ProductsGallery" class="btn btn-light form-control">Back to Gallery</a></div>
+            <div class="col-4"><button class="btn btn-success form-control">Book Now!</button></div>
+            <div class="col-4"><button @onclick="OnClickShowProductDetails" class="btn btn-primary form-control">Product Details</button></div>
+        </div>
+    </EditForm>
+
+    <div class="offset-1 col-3">
+        <img src="Uploads/products/@(_fileName)" />
+    </div>
+</div>
+
 @code {
     [Parameter] public Appointment Model { get; set; }
+    [Parameter] public EventCallback OnClickShowProductDetails { get; set; }
 
+    [Inject] public FileService _fileService { get; set; }
+    [Inject] public IJSRuntime _js { get; set; }
+    [Inject] public NavigationManager _navigationManager { get; set; }
+
+    ApplicationDbContext _db => Service;
+
+    string _fileName;
+
+    protected override void OnParametersSet()
+    {
+        _fileName = _fileService.GetFileNames("products", Model.Product.Id.ToString()).FirstOrDefault();
+
+        base.OnParametersSet();
+    }
+
+    private async Task validSubmit()
+    {
+        Model.Product = null;
+        _db.Appointments.Add(Model);
+        var result = _db.SaveChanges();
+        if (result == 0)
+        {
+            //error
+            await _js.InvokeVoidAsync("alert", "Error saving data");
+        }
+        else
+        {
+            //saved
+            await _js.InvokeVoidAsync("alert", "Data saved");
+            _navigationManager.NavigateTo("appointmentbooked");
+        }
+    }
 }

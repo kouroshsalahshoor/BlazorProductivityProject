@@ -143,3 +143,9 @@ C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProjec
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.csprojAssemblyReference.cache
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductDetailsComponent.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductDetailsComponent.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductItem.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductItem.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductsGallery.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductsGallery.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\AppointmentBooked.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\AppointmentBooked.razor.g.cs

@@ -1,0 +1,22 @@
+﻿@page "/ProductsGallery"
+@inherits OwningComponentBase<ApplicationDbContext>
+
+<h3>Product Gallery</h3>
+
+<div class="row">
+    @foreach (var item in _items)
+    {
+        <ProductItem Model="@item"></ProductItem>
+    }
+</div>
+
+@code {
+    ApplicationDbContext _db => Service;
+    List<Product> _items = new List<Product>();
+
+    protected override void OnInitialized()
+    {
+        _items = _db.Products.ToList();
+        base.OnInitialized();
+    }
+}

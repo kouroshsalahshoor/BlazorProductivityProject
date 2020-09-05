@@ -1,14 +1,14 @@
 @font-face {
   font-family: Shabnam;
-  src: url('Farsi-Digits/Shabnam-FD.eot');
-  src: url('Farsi-Digits/Shabnam-FD.eot?#iefix') format('embedded-opentype'),
-       url('Farsi-Digits/Shabnam-FD.woff2') format('woff2'),
-       url('Farsi-Digits/Shabnam-FD.woff') format('woff'),
-       url('Farsi-Digits/Shabnam-FD.ttf') format('truetype');
+  src: url('Shabnam.eot');
+  src: url('Shabnam.eot?#iefix') format('embedded-opentype'),
+       url('Shabnam.woff2') format('woff2'),
+       url('Shabnam.woff') format('woff'),
+       url('Shabnam.ttf') format('truetype');
   font-weight: normal;
 }
 
-/*@font-face {
+@font-face {
   font-family: Shabnam;
   src: url('Shabnam-Bold.eot');
   src: url('Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
@@ -47,4 +47,3 @@
        url('Shabnam-Medium.ttf') format('truetype');
   font-weight: 500;
 }
-*/

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorProductivityProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200902070617_Appointment2")]
-    partial class Appointment2
+    [Migration("20200905063728_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
