@@ -1,0 +1,45 @@
+.top-row a{
+    color:white;
+}
+
+.sidebar {
+    width: auto;
+}
+
+/*#region tableFixHead */
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+    .tableFixHead table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .tableFixHead th,
+    .tableFixHead td {
+        padding: 8px 16px;
+    }
+
+    .tableFixHead th {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+/*#endregion tableFixHead */
+
+/*#region modal */
+
+.modal-body {
+    height: auto;
+    overflow-y: auto;
+}
+
+.modal-header .close {
+    margin: -1rem -1rem -1rem -1rem;
+}
+
+/*#endregion modal */

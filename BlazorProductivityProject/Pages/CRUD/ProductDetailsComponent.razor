@@ -1,0 +1,46 @@
+﻿
+<div class="p-4 border rounded row">
+    <div class="col-8">
+        <div class="form-group row">
+            <div class="col-4">Name</div>
+            <div class="col-8"><input value="@Model.Product.Name" class="form-control" readonly /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Color</div>
+            <div class="col-8"><input value="@Model.Product.Color" class="form-control" readonly /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Price</div>
+            <div class="col-8"><input value="@Model.Product.Price" class="form-control" readonly /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">Category Name</div>
+            <div class="col-8"><input value="@Model.Product.Category.Name" class="form-control" readonly /></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4"></div>
+            <div class="col-4"><a href="/" class="btn btn-success form-control"></a></div>
+            <div class="col-4"><button @onclick="OnClickShowAppointment" class="btn btn-primary form-control">Book Appointment</button></div>
+        </div>
+    </div>
+
+    <div class="offset-1 col-3">
+        <img src="Uploads/products/@(_fileName)" />
+    </div>
+</div>
+
+@code {
+    [Parameter] public Appointment Model { get; set; }
+    [Parameter] public EventCallback OnClickShowAppointment { get; set; }
+
+    [Inject] public FileService _fileService { get; set; }
+
+    string _fileName;
+
+    protected override void OnParametersSet()
+    {
+        _fileName = _fileService.GetFileNames("products", Model.Product.Id.ToString()).FirstOrDefault();
+
+        base.OnParametersSet();
+    }
+}

@@ -1,0 +1,21 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading alert alert-info">@Title</div>
+    <div class="panel-body alert alert-success">@ChildContent</div>
+
+    <button class="btn btn-danger" @onclick="@(() => click("Text sent from child"))">send from child to parent</button>
+    @*<button class="btn btn-danger" @onclick="childClickMethod">click</button>*@
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; } /*must be called ChildContent to work*/
+    //[Parameter] public string Content { get; set; }
+
+    private void click(string s)
+    {
+        childSenderMethod.InvokeAsync(s);
+    }
+
+    [Parameter] public EventCallback<string> childSenderMethod { get; set; }
+    //[Parameter] public EventCallback<MouseEventArgs> childClickMethod { get; set; }
+}

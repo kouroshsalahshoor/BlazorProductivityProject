@@ -1,0 +1,19 @@
+﻿@page "/parent"
+<h3>Parent Component</h3>
+
+<ChildComponent Title="child title from parent" 
+                childSenderMethod="parentRecieverMethod">
+    <h1 class="text-danger">child content from parent</h1>
+</ChildComponent>
+@*<ChildComponent Title="child title from parent" Content="child content from parent"></ChildComponent>*@
+
+<br />
+<p>@message</p>
+
+@code {
+    private string message;
+    private void parentRecieverMethod(string s)
+    {
+        message = s;
+    }
+}

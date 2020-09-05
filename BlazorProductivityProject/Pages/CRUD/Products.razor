@@ -1,0 +1,338 @@
+﻿@page "/products"
+@inherits OwningComponentBase<ApplicationDbContext>
+
+<h3>Products</h3>
+
+@if (_items == null)
+{
+    <p>Loading ...</p>
+}
+else
+{
+    <div class="table-responsive tableFixHead">
+        <table class="table table-sm table-bordered table-hover ">
+            @*<table class="table table-sm table-bordered table-striped table-hover ">*@
+            <caption>List of Products</caption>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <button class="btn btn-outline-success" @onclick="add">+ add</button>
+                    </th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Category Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int rowNbr = 1;
+                }
+                @foreach (var item in _items)
+                {
+                    <tr>
+                        <td>@(rowNbr++)</td>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Category.Name</td>
+                        <td>@item.Price.ToString("n0")</td>
+                        <td>
+                            <button class="btn btn-outline-primary" @onclick="(()=>edit(item))">edit</button>
+                            <button class="btn btn-outline-danger" @onclick="(async ()=>await delete(item))">delete</button>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+
+@if (_show)
+{
+    <div class="modal" tabindex="-1" style="display:block;">
+
+        <EditForm Model="_model" OnValidSubmit="@(async () => await validsubmit())">
+
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-info">@(_model.Id == 0 ? "Add" : "Edit") Product</h5>
+                        <button type="button" class="close" @onclick="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <DataAnnotationsValidator />
+                            @*<ValidationSummary />*@
+
+                            <div class="col-12">
+
+                                <div class="row py-2">
+                                    <div class="col-4">
+                                        Product Category
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <select class="form-control" @onchange="selectionChanged">
+                                                @*<option value="" disabled>Please select an option</option>*@
+                                                @foreach (var item in _categories)
+                                                {
+                                                    <option value="@item.Id.ToString()" selected="@(item.Id == _model.CategoryId)">@item.Name</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row py-2">
+                                    <div class="col-4">
+                                        Product Name
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <InputText class="form-control" @bind-Value="@_model.Name" />
+                                            <ValidationMessage For="@(()=> _model.Name)"></ValidationMessage>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row py-2">
+                                    <div class="col-4">
+                                        Product Price
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <InputNumber class="form-control" @bind-Value="@_model.Price" />
+                                            <ValidationMessage For="@(()=> _model.Price)"></ValidationMessage>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row py-2">
+                                    <div class="col-4">
+                                        Product Color
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <InputText class="form-control" @bind-Value="@_model.Color" />
+                                            <ValidationMessage For="@(()=> _model.Color)"></ValidationMessage>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row py-2">
+                                    <div class="col-4">
+                                        Product Image
+                                    </div>
+                                    <div class="col-8">
+                                        <InputFile OnChange="HandleFileSelection" />
+
+                                        @*@if (_file != null)
+                                            {
+                                                <p>Name: @_file.Name</p>
+                                                <p>Size in bytes: @_file.Size</p>
+                                                <p>Last modified date: @_file.LastModified.ToShortDateString()</p>
+                                                <p>Content type (not always supplied by the browser): @_file.Type</p>
+                                            }*@
+
+                                        <p>@_status</p>
+
+                                        @if (!string.IsNullOrEmpty(_imageDataUri))
+                                        {
+                                            <img src="@_imageDataUri" style="width:320px; height:240px;" />
+                                        }
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" data-dismiss="modal">
+                            <span aria-hidden="true">save</span>
+                        </button>
+                        <button type="button" class="btn btn-light" @onclick="close">
+                            <span aria-hidden="true">close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </EditForm>
+    </div>
+}
+
+@code {
+    ApplicationDbContext _db => Service;
+    [Inject] private IJSRuntime _js { get; set; }
+    [Inject] private FileService _fileService { get; set; }
+
+    List<Product> _items;
+    List<Category> _categories;
+    Product _model;
+    bool _show;
+
+    IFileListEntry _file;
+    string _imageDataUri;
+    string _status;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //seed
+        if (!await _db.Categories.AnyAsync())
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                _db.Categories.Add(new Category { Name = "Category " + i });
+            }
+            await _db.SaveChangesAsync();
+        }
+        if (!await _db.Products.AnyAsync())
+        {
+            var rand = new Random();
+            for (int i = 1; i <= 100; i++)
+            {
+                _db.Products.Add(new Product { Name = "Product " + i, CategoryId = (((i - 1) % 10) + 1), Price = rand.Next(100000, 10000000), Color = "Color " + i.ToString() });
+            }
+            await _db.SaveChangesAsync();
+        }
+
+        _items = await _db.Products.Include(x => x.Category).ToListAsync();
+        _categories = await _db.Categories.ToListAsync();
+
+    }
+
+    async Task HandleFileSelection(IFileListEntry[] files)
+    {
+        _file = files.FirstOrDefault();
+        if (_file != null)
+        {
+            // Load as an image file in memory
+            var format = _file.Type;
+            var imageFile = await _file.ToImageFileAsync(format, 320, 240);
+            var ms = new MemoryStream();
+            await imageFile.Data.CopyToAsync(ms);
+
+            // Make a data URL so we can display it
+            _imageDataUri = $"data:{format};base64,{Convert.ToBase64String(ms.ToArray())}";
+
+            _status = $"Finished loading {ms.Length} bytes from {imageFile.Name}";
+        }
+    }
+
+    void selectionChanged(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value.ToString(), out int id))
+        {
+            _model.CategoryId = id;
+            _model.Category = _categories.SingleOrDefault(x => x.Id == id);
+        }
+    }
+
+    private async Task validsubmit()
+    {
+        if (_model.Id == 0)
+        {
+            if (_model.CategoryId == 0)
+            {
+                _model.CategoryId = _categories.FirstOrDefault().Id;
+            }
+            await _db.Products.AddAsync(_model);
+        }
+        else
+        {
+            _db.Products.Update(_model);
+        }
+
+        var result = await _db.SaveChangesAsync();
+        if (result == 0)
+        {
+            //error
+            await _js.InvokeVoidAsync("alert", "Error saving data");
+        }
+        else
+        {
+            if (_file != null)
+            {
+                foreach (string f in _fileService.GetFileNames("products", _model.Id.ToString()))
+                {
+                    System.IO.File.Delete(f);
+                }
+
+                var path = Path.Combine(_fileService.GetFullPathForFolder("products"), _model.Id.ToString() + Path.GetExtension(_file.Name));
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await _file.Data.CopyToAsync(stream);
+                }
+            }
+
+            //saved
+            await _js.InvokeVoidAsync("alert", "Data saved");
+
+            _items = await _db.Products.ToListAsync();
+        }
+
+        _show = false; // must be closed last - gives error otherwise
+
+    }
+
+    private void add()
+    {
+        _model = new Product();
+        _show = true;
+        _imageDataUri = string.Empty;
+        _status = string.Empty;
+    }
+
+    private void edit(Product model)
+    {
+        _model = model;
+        _show = true;
+
+        //file to memorystream
+        string[] files = _fileService.GetFileNames("uploads\\products", _model.Id.ToString());
+        if (files.Length > 0)
+        {
+            var path = Path.Combine(_fileService.GetFullPathForFolder("uploads\\products"), files.FirstOrDefault());
+
+            MemoryStream ms = new MemoryStream();
+
+            using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read))
+                file.CopyTo(ms);
+
+            // Make a data URL so we can display it
+            _imageDataUri = $"data:png;base64,{Convert.ToBase64String(ms.ToArray())}";
+        }
+
+    }
+
+    private async Task delete(Product item)
+    {
+        if (await _js.InvokeAsync<bool>("confirm", "Are absolutely you sure you want to delete this item?"))
+        {
+            _db.Products.Remove(item);
+            var result = await _db.SaveChangesAsync();
+            if (result == 0)
+            {
+                //error
+                await _js.InvokeVoidAsync("alert", "Error deleting data");
+            }
+            else
+            {
+                //saved
+                await _js.InvokeVoidAsync("alert", "Data saved");
+
+                _items = await _db.Products.ToListAsync();
+            }
+        }
+
+    }
+
+    private void close()
+    {
+        _show = false;
+    }
+}

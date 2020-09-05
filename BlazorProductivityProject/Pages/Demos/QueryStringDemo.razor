@@ -1,0 +1,36 @@
+﻿@page "/QueryStringDemo"
+@inject NavigationManager _NavigationManager
+
+<h3>QueryStringingDemo</h3>
+
+<p>P1: @p1</p>
+<p>P2: @p2</p>
+
+@if (absoluteUri != null)
+{
+    <p>absoluteUri: @absoluteUri.AbsoluteUri</p>
+    <p>Query: @absoluteUri.Query</p>
+    <p>AbsolutePath: @absoluteUri.AbsolutePath</p>
+    <p>Scheme: @absoluteUri.Scheme</p>
+    <p>DnsSafeHost: @absoluteUri.DnsSafeHost</p>
+    <p>Port: @absoluteUri.Port</p>
+    <p>Host: @absoluteUri.Host</p>
+    <p>Authority: @absoluteUri.Authority</p>
+}
+
+<p><button class="btn btn-primary" @onclick="getParams">get params</button></p>
+@code {
+    string p1;
+    string p2;
+    Uri absoluteUri;
+
+    private void getParams()
+    {
+        absoluteUri = new Uri(_NavigationManager.Uri);
+
+        var queryParam = System.Web.HttpUtility.ParseQueryString(absoluteUri.Query);
+        p1 = queryParam["p1"];
+        p2 = queryParam["p2"];
+    }
+
+}

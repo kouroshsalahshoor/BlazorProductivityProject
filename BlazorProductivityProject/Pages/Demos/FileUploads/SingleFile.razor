@@ -1,0 +1,32 @@
+﻿@page "/singlefile"
+@*from the great Steve Sanderson*@
+@*https://blog.stevensanderson.com/2019/09/13/blazor-inputfile/*@
+@*https://github.com/SteveSandersonMS/BlazorInputFile/blob/master/samples/Sample.Core/Pages/SingleFile.razor*@
+
+<h1>Single file</h1>
+
+<p>A single file input that uploads automatically on file selection</p>
+
+<InputFile OnChange="HandleSelection" />
+
+<p>@status</p>
+
+@code {
+    [Inject] private IWebHostEnvironment environment { get; set; }
+    string status;
+
+    async Task HandleSelection(IFileListEntry[] files)
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            var path = Path.Combine(environment.WebRootPath, "uploads", file.Name);
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await file.Data.CopyToAsync(stream);
+            }
+
+            status = $"Finished loading {file.Size} bytes from {file.Name}";
+        }
+    }
+}
