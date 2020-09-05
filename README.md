@@ -4,15 +4,18 @@ This project is a try to gather all the "right" solutions for server-side blazor
 
 I didn't find any projects for rtl and farsi language, so I hope this will help those who will start a Blazor Server-side project.
 
-Sources:
-1.
-Build Real world application with Blazor .NET Core 3.1 
-by Bhurgen Patel
+<h3>Sources:</h3>
+<ol>
+  <li>Build Real world application with Blazor .NET Core 3.1 (by Bhurgen Patel)</li>
+  </ol>
 
-
-
-This is not complete. I will try to complete it in time.
+This project is not completed yet.
+<br/>
+I will try to complete it in time.
+<br/>
 If you have any questions please ask.
 
+<br/>
 Kourosh Salahshoor
+<br/>
 kourosh23@hotmail.com
