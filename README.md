@@ -6,7 +6,7 @@ I didn't find any project for rtl and farsi language, so I hope this will help.
 
 <h3>Solutions:</h3>
 <ol>
-  <li>CRUD with modal</li>
+  <li>CRUD with modal - form validation - js native alert and confirm</li>
   <li>File upload on server - FileService - all image types</li>
   <li>Product Gallery</li>
   <li>Parent-Child Communication</li>
