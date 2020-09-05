@@ -1,8 +1,18 @@
 # BlazorProductivityProject
 
-This project tries to gather all the solutions and best-practices for server-side blazor in one place.
+<p>This project tries to gather all the solutions and best-practices for server-side blazor in one place.</p>
+<p>My goal is to create an accounting application with server-side blazor later for my compay. So before that I thought to gather all I study in form of one solution so that it would be easier to work with the main project later. Also in case we found people who wanted to work with us, we could have a reference, using copy and paste, as much as possible.</p>
+<p>I didn't find any project for rtl and farsi language, so I hope this project will help those people too.</p>
 
-I didn't find any project for rtl and farsi language, so I hope this will help.
+<h3>How to use:</h3>
+<ol>
+  <li>Download the project</li>
+ <li>update-database in Package Manager Console</li>
+  <li>Register a user</li>
+  <li>Login</li>
+  </ol>
+
+<b>if there were issues, please let me know</b>
 
 <h3>Solutions:</h3>
 <ol>
