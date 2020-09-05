@@ -293,10 +293,10 @@ else
         _show = true;
 
         //file to memorystream
-        string[] files = _fileService.GetFileNames("uploads\\products", _model.Id.ToString());
+        string[] files = _fileService.GetFileNames("products", _model.Id.ToString());
         if (files.Length > 0)
         {
-            var path = Path.Combine(_fileService.GetFullPathForFolder("uploads\\products"), files.FirstOrDefault());
+            var path = Path.Combine(_fileService.GetFullPathForFolder("products"), files.FirstOrDefault());
 
             MemoryStream ms = new MemoryStream();
 
