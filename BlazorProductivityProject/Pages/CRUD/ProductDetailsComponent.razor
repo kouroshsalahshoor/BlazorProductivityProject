@@ -25,7 +25,7 @@
     </div>
 
     <div class="offset-1 col-3">
-        <img src="Uploads/products/@(_fileName)" />
+        <img src="@(string.IsNullOrEmpty(_fileName) ? "images/150.png" : $"uploads/products/{_fileName}")" />
     </div>
 </div>
 
@@ -39,7 +39,7 @@
 
     protected override void OnParametersSet()
     {
-        _fileName = _fileService.GetFileNames("products", Model.Product.Id.ToString()).FirstOrDefault();
+        _fileName = _fileService.GetFileName("products", Model.Product.Id.ToString());
 
         base.OnParametersSet();
     }

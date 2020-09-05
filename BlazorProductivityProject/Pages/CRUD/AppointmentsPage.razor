@@ -1,0 +1,240 @@
+﻿@page "/appointments"
+@inherits OwningComponentBase<ApplicationDbContext>
+
+<AuthorizeView>
+    <Authorized Context="Auth">
+
+        @if (_items == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <div class="container border p-3">
+                <div class="row">
+                    <div class="col-5">
+                        <h3 class="text-info">Appointment List</h3>
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Product Name</th>
+                                <th>Date</th>
+                                <th>Confirmed</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in _items)
+                            {
+                                <tr>
+                                    <td>@item.CustomerName</td>
+                                    <td>@item.CustomerEmail</td>
+                                    <td>@item.CustomerPhone</td>
+                                    <td>@item.Date.ToShortDateString()</td>
+                                    <td>@item.Product.Name</td>
+                                    <td><input type="checkbox" checked="@(item.IsConfirmed)" class="form-control" disabled></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="width:150px;"
+                                                @onclick="(() => EditAppointment(item))">
+                                            Edit
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+
+        @if (_showPopup)
+        {
+            <div class="modal" tabindex="-1" style="display:block" role="dialog">
+                <EditForm Model="@_model" OnValidSubmit="@ValidSubmit">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="text-info">Edit Appointment</h3>
+
+                                <button type="button" class="close" @onclick="ClosePopup">
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <!-- Edit form for the current forecast -->
+                            <div class="modal-body">
+                                <DataAnnotationsValidator />
+                                <ValidationSummary />
+                                <div class="row">
+                                    <div class="col-9">
+
+                                        <div class="row py-2">
+                                            <div class="col-4">
+                                                Name
+                                            </div>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" @bind="_model.CustomerName" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row py-2">
+                                            <div class="col-4">
+                                                Email
+                                            </div>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" @bind="_model.CustomerEmail" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row py-2">
+                                            <div class="col-4">
+                                                Phone
+                                            </div>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" @bind="_model.CustomerPhone" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row py-2">
+                                            <div class="col-4">
+                                                Product
+                                            </div>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" @bind="_model.Product.Name" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row py-2">
+                                            <div class="col-4">
+                                                Date
+                                            </div>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" value="@_model.Date.ToShortDateString()" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row py-2">
+                                            <div class=" offset-4 col">
+                                                <button class="btn btn-success form-control" type="submit">Confirm!</button>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-danger form-control text-light" @onclick="@(async ()=> await DeleteAppointment())">
+                                                    Delete
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 ">
+                                        @{
+                                            var fileName = _fileService.GetFileName("products", _model.Product.Id.ToString());
+                                        }
+                                        <img src="@(string.IsNullOrEmpty(fileName) ? "images/150.png" : $"uploads/products/{fileName}")"
+                                             style="width:100%;border-radius:5px; border:1px solid #bbb9b9;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </EditForm>
+            </div>
+        }
+    </Authorized>
+    <NotAuthorized>
+        <p class="text-danger">You're not signed in.</p>
+    </NotAuthorized>
+</AuthorizeView>
+@code
+{ ApplicationDbContext _db => Service;
+
+        [Inject] private IJSRuntime _js { get; set; }
+        [Inject] private FileService _fileService { get; set; }
+
+        // AuthenticationState is available as a CascadingParameter
+        List<Appointment> _items;
+        Appointment _model = new Appointment();
+
+    protected override void OnInitialized()
+    {
+        // Get the current user
+        _items = _db.Appointments.Include(x => x.Product).ToList();
+    }
+
+    bool _showPopup = false;
+    void ClosePopup()
+    {
+        // Close the Popup
+        _showPopup = false;
+    }
+
+    void EditAppointment(Appointment appointment)
+    {
+        _model = appointment;
+        _items = _db.Appointments.Include(x => x.Product).ToList();
+        _showPopup = true;
+    }
+
+    async Task DeleteAppointment()
+    {
+        _showPopup = false;
+        _db.Appointments.Remove(_model);
+        var result = await _db.SaveChangesAsync();
+        if (result == 0)
+        {
+            //error
+            await _js.InvokeVoidAsync("alert", "Error saving data");
+        }
+        else
+        {
+            _model = new Appointment { Product = new Product()};
+            _items.Clear();
+            _items = await _db.Appointments.Include(x => x.Product).ToListAsync();
+
+            //saved
+            await _js.InvokeVoidAsync("alert", "Data saved");
+
+        }
+    }
+
+    async Task ValidSubmit()
+    {
+        _showPopup = false;
+
+        _model.IsConfirmed = true;
+        _db.Appointments.Update(_model);
+        var result = _db.SaveChanges();
+        if (result == 0)
+        {
+            //error
+            await _js.InvokeVoidAsync("alert", "Error saving data");
+        }
+        else
+        {
+            //saved
+            await _js.InvokeVoidAsync("alert", "Data saved");
+
+            _items.Clear();
+            _items = _db.Appointments.Include(x => x.Product).ToList();
+        }
+    }
+
+    //string convertImageToDisplay(byte[] image)
+    //{
+    //    if (image != null)
+    //    {
+    //        var base64 = Convert.ToBase64String(image);
+    //        var finalStr = string.Format("data:image/jpg;base64,{0}", base64);
+    //        return finalStr;
+    //    }
+
+    //    else { return ""; }
+    //}
+}
