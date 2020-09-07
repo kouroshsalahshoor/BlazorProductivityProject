@@ -16,7 +16,7 @@
 <h3>Solutions:</h3>
 <ol>
   <li>Farsi Datepicker (BlazorDateRangePicker)</li>
-  <li>DateService (Persian date to Latin and vice versa)</li>
+  <li>DateTimeService (Persian date to Latin and vice versa)</li>
   <li>Farsi Map component - Map.ir</li>
   <li>Dropdowns with Enums and lists</li>
   <li>Checkbox binding</li>
