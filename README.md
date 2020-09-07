@@ -17,10 +17,10 @@
 <ol>
   <li>Farsi Datepicker (BlazorDateRangePicker)</li>
   <li>DateService (Persian date to Latin and vice versa)</li>
-  <i>Farsi Map component - Map.ir</i>
-  <i>Dropdowns with Enums and lists</i>
-  <i>Checkbox binding</i>
-  <i>Collapsable Menu</i>
+  <li>Farsi Map component - Map.ir</li>
+  <li>Dropdowns with Enums and lists</li>
+  <li>Checkbox binding</li>
+  <li>Collapsable Menu</li>
   
   <li>CRUD with modal - form validation - javascript native alert and confirm</li>
   <li>File upload (Steve Sanderson) on server - FileService - all image types</li>
