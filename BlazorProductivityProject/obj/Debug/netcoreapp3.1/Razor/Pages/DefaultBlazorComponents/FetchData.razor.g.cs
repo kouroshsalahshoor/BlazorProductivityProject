@@ -115,6 +115,13 @@ using Microsoft.AspNetCore.Hosting;
 #line hidden
 #nullable disable
 #nullable restore
+#line 21 "C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\_Imports.razor"
+using BlazorDateRangePicker;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\Pages\DefaultBlazorComponents\FetchData.razor"
 using BlazorProductivityProject.Data;
 

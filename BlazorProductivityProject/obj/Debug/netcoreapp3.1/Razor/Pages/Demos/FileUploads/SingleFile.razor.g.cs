@@ -121,6 +121,13 @@ using Microsoft.AspNetCore.Hosting;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 21 "C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\_Imports.razor"
+using BlazorDateRangePicker;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/singlefile")]
     public partial class SingleFile : Microsoft.AspNetCore.Components.ComponentBase
     {

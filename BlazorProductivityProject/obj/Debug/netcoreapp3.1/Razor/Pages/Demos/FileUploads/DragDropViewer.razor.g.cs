@@ -121,6 +121,13 @@ using Microsoft.AspNetCore.Hosting;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 21 "C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\_Imports.razor"
+using BlazorDateRangePicker;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/dragdrop-viewer")]
     public partial class DragDropViewer : Microsoft.AspNetCore.Components.ComponentBase
     {

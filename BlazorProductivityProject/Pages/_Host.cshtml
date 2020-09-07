@@ -12,8 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blazor Productivity Project</title>
     <base href="~/" />
+
+    <link rel="stylesheet" href="_content/BlazorDateRangePicker/daterangepicker.min.css" />
+
+    <!-- Map styles -->
+    <link href="~/lib/mapp.v.1.4.2/dist/css/mapp.min.css" rel="stylesheet" />
+    <link href="~/lib/mapp.v.1.4.2/dist/css/fa/style.css" rel="stylesheet" />
+
     <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/lib/bootstrap-rtl/css/bootstrap-rtl.min.css" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
     <link href="~/lib/shabnam-font/font-face.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="~/css/farsi.css" rel="stylesheet" />
@@ -35,7 +43,20 @@
         <a class="dismiss">🗙</a>
     </div>
 
-    <script src="_content/BlazorInputFile/inputfile.js"></script>
     <script src="_framework/blazor.server.js"></script>
+
+    <script src="_content/BlazorInputFile/inputfile.js"></script>
+    <script src="_content/BlazorDateRangePicker/clickAndPositionHandler.js"></script>
+
+    <!-- Map scripts -->
+    <script type="text/javascript" src="~/lib/mapp.v.1.4.2/dist/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/lib/mapp.v.1.4.2/dist/js/mapp.env.js"></script>
+    <script type="text/javascript" src="~/lib/mapp.v.1.4.2/dist/js/mapp.min.js"></script>
+    <script type="text/javascript" src="~/js/map.js"></script>
+
+    <!-- Popper.JS -->
+    <!--<script type="text/javascript" src="~/lib/popper.min.js"></script>-->
+    <!-- Bootstrap JS -->
+    <!--<script type="text/javascript" src="~/lib/bootstrap.min.js"></script>-->
 </body>
 </html>

@@ -1,0 +1,134 @@
+﻿@page "/employee/{EmployeeId}"
+@inherits OwningComponentBase<ApplicationDbContext>
+
+<h1 class="page-title">Details for @_model.FirstName @_model.LastName</h1>
+
+<div class="col-12 row">
+    <div class="col-2">
+        @*<img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{Employee.EmployeeId}.jpg")" class="img-responsive rounded-circle employee-detail-img" />*@
+    </div>
+    <div class="col-10 row">
+        <div class="col-xs-12 col-sm-8">
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Employee ID</label>
+                <div class="col-sm-8">
+                    <label type="text" class="form-control-plaintext">@_model.Id</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">First name</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.FirstName</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Last name</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.LastName</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Birthdate</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.BirthDate.ToShortDateString()</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Email</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.Email</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Street</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.Street</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Zip</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.Zip</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">City</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.City</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Phone number</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.PhoneNumber</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Gender</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.Gender</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Smoker</label>
+                <div class="col-sm-8">
+
+                    @if (_model.Smoker)
+                    {
+                        <label type="text" readonly class="form-control-plaintext">Yes</label>
+                    }
+                    else
+                    {
+                        <label type="text" readonly class="form-control-plaintext">No</label>
+
+                    }
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Joined us</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.JoinedDate?.ToShortDateString()</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Left us</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@_model.ExitDate?.ToShortDateString()</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+            <Map Zoom="18" Lat="35.7892" Lng="51.4890"></Map>
+        </div>
+    </div>
+</div>
+
+@code{
+    [Parameter] public string EmployeeId { get; set; }
+
+    ApplicationDbContext _db => Service;
+
+    private Employee _model { get; set; } = new Employee();
+    private IEnumerable<Employee> _items { get; set; }
+    private List<Country> Countries { get; set; }
+    private List<JobCategory> JobCategories { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _items = await _db.Employees.ToListAsync();
+        _model = _items.FirstOrDefault(e => e.Id == int.Parse(EmployeeId));
+    }
+
+}

@@ -17,71 +17,118 @@
             <Authorized>
 
                 <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="Appointments">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Appointments
+                    <NavLink class="nav-link" @onclick="@(() => ToggleSubMenu("expandSubMenuHrm"))">
+                        <span class="oi oi-@(expandSubMenuHrm ? "minus" : "plus")" aria-hidden="true"></span> HRM
                     </NavLink>
+                    @if (expandSubMenuHrm)
+                    {
+                        <ul class="nav flex-column">
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="employees" Match="NavLinkMatch.All">
+                                    Employees
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="employee/add" Match="NavLinkMatch.All">
+                                    Add New Employee
+                                </NavLink>
+                            </li>
+                        </ul>
+                    }
                 </li>
 
                 <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="products">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Products (CRUD with image and select)
+                    <NavLink class="nav-link" @onclick="@(() => ToggleSubMenu("expandSubMenuProducts"))">
+                        <span class="oi oi-@(expandSubMenuProducts ? "minus" : "plus")" aria-hidden="true"></span> Categories & Products
                     </NavLink>
+                    @if (expandSubMenuProducts)
+                    {
+                        <ul class="nav flex-column">
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="Appointments" Match="NavLinkMatch.All">
+                                    Appointments
+                                </NavLink>
+                            </li>
+
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="products" Match="NavLinkMatch.All">
+                                    Products (CRUD with image and select)
+                                </NavLink>
+                            </li>
+
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="ProductsGallery" Match="NavLinkMatch.All">
+                                    Product Gallery
+                                </NavLink>
+                            </li>
+
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="categories" Match="NavLinkMatch.All">
+                                    Categories (CRUD 1)
+                                </NavLink>
+                            </li>
+                        </ul>
+                    }
                 </li>
 
                 <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="ProductsGallery">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Product Gallery
+                    <NavLink class="nav-link" @onclick="@(() => ToggleSubMenu("expandSubMenuDemos"))">
+                        <span class="oi oi-@(expandSubMenuDemos ? "minus" : "plus")" aria-hidden="true"></span> Demos
                     </NavLink>
-                </li>
+                    @if (expandSubMenuDemos)
+                    {
+                        <ul class="nav flex-column">
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="BlazorDateRangePickerDemo" Match="NavLinkMatch.All">
+                                    Blazor DateRangePicker Demo
+                                </NavLink>
+                            </li>
 
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="categories">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Categories (CRUD 1)
-                    </NavLink>
-                </li>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="parent" Match="NavLinkMatch.All">
+                                    Parent Child Communication
+                                </NavLink>
+                            </li>
 
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="parent">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Parent Child Communication
-                    </NavLink>
-                </li>
-
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="bindings">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Bindings Demo
-                    </NavLink>
-                </li>
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="ComponentBaseDemo">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Component Base Demo
-                    </NavLink>
-                </li>
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="ComponentBaseWithPartialDemo">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Partial Demo
-                    </NavLink>
-                </li>
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="routingdemo/xxx/222">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Routing Demo
-                    </NavLink>
-                </li>
-                <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="querystringdemo?p1=xxx&p2=222">
-                        <span class="oi oi-plus" aria-hidden="true"></span> Query String Demo
-                    </NavLink>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="bindings" Match="NavLinkMatch.All">
+                                    Bindings Demo
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="ComponentBaseDemo" Match="NavLinkMatch.All">
+                                    Component Base Demo
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="ComponentBaseWithPartialDemo" Match="NavLinkMatch.All">
+                                    Partial Demo
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="routingdemo/xxx/222" Match="NavLinkMatch.All">
+                                    Routing Demo
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-3">
+                                <NavLink class="nav-link" href="querystringdemo?p1=xxx&p2=222" Match="NavLinkMatch.All">
+                                    Query String Demo
+                                </NavLink>
+                            </li>
+                        </ul>
+                    }
                 </li>
 
             </Authorized>
 
             <NotAuthorized>
                 <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="counter">
+                    <NavLink class="nav-link" href="counter" Match="NavLinkMatch.All">
                         <span class="oi oi-plus" aria-hidden="true"></span> Counter
                     </NavLink>
                 </li>
                 <li class="nav-item px-3">
-                    <NavLink class="nav-link" href="fetchdata">
+                    <NavLink class="nav-link" href="fetchdata" Match="NavLinkMatch.All">
                         <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
                     </NavLink>
                 </li>
@@ -94,10 +141,36 @@
 @code {
     private bool collapseNavMenu = true;
 
+    private bool expandSubMenuHrm;
+    private bool expandSubMenuProducts;
+    private bool expandSubMenuDemos;
+
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ToggleSubMenu(string menu)
+    {
+        if (menu == "expandSubMenuHrm")
+        {
+            expandSubMenuHrm = !expandSubMenuHrm;
+            expandSubMenuProducts = false;
+            expandSubMenuDemos = false;
+        }
+        else if (menu == "expandSubMenuProducts")
+        {
+            expandSubMenuHrm = false;
+            expandSubMenuProducts = !expandSubMenuProducts;
+            expandSubMenuDemos = false;
+        }
+        else if (menu == "expandSubMenuDemos")
+        {
+            expandSubMenuHrm = false;
+            expandSubMenuProducts = false;
+            expandSubMenuDemos = !expandSubMenuDemos;
+        }
     }
 }

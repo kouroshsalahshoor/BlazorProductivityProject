@@ -1,0 +1,18 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div id="map" style="height: 100%; width: 100%;"></div>
+
+@code {
+    [Parameter] public double Zoom { get; set; }
+    [Parameter] public double Lat { get; set; }
+    [Parameter] public double Lng { get; set; }
+
+    protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JSRuntime.InvokeVoidAsync(
+            "map.show",
+            Zoom,
+            Lat,
+            Lng);
+    }
+}

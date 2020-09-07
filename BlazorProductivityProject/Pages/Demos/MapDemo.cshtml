@@ -1,0 +1,64 @@
+﻿@page "/mapdemo"
+@model BlazorProductivityProject.Pages.Demos.MapDemoModel
+@{
+}
+
+@*https://support.map.ir/developers/web/1-2-0/installation/*@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mapp styles -->
+    <link href="~/lib/mapp.v.1.4.2/dist/css/mapp.min.css" rel="stylesheet" />
+    <link href="~/lib/mapp.v.1.4.2/dist/css/fa/style.css" rel="stylesheet" />
+    <!-- Your styles -->
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        #app {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/javascript" src="~/lib/mapp.v.1.4.2/dist/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/lib/mapp.v.1.4.2/dist/js/mapp.env.js"></script>
+    <script type="text/javascript" src="~/lib/mapp.v.1.4.2/dist/js/mapp.min.js"></script>
+    <!-- Your scripts -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var app = new Mapp({
+                element: '#app',
+                presets: {
+                    latlng: {
+                        lat: 35.7892,
+                        lng: 51.4890,
+                    },
+                    zoom: 17,
+                },
+                apiKey: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhlODA0NTJlZDNlOTVmM2Y3NGNiOGE5OGI0NzMxMjQ1YTQ5YzQ2YTc1ZTBiYWU3NDI1ODYxYTNlMWI3MGJiZjI2Mjg0NjYxOTNlMDQwYmM1In0.eyJhdWQiOiIxMDIzMCIsImp0aSI6IjhlODA0NTJlZDNlOTVmM2Y3NGNiOGE5OGI0NzMxMjQ1YTQ5YzQ2YTc1ZTBiYWU3NDI1ODYxYTNlMWI3MGJiZjI2Mjg0NjYxOTNlMDQwYmM1IiwiaWF0IjoxNTk1NzQ4MTgzLCJuYmYiOjE1OTU3NDgxODMsImV4cCI6MTU5ODM0MDE4Mywic3ViIjoiIiwic2NvcGVzIjpbImJhc2ljIl19.llKLy3sbQasxKVPtCKazY-z2iZ-58rZn75M5PtCFYIEndIfT6RYCNdLk05YaczrElIpwERNDb-wz1NA0Ev-rSWMtxx_YdsGTgvGb5QH9eAMX_oRMjnxIndIpXPoTnAMupa20zNZK79fakqvHL3ke8Oo_IQUAGMpnkj_xJgsEdyJz6X3_zkdal44GHZ37J37GqYsiQ9OkUaW-vPcLQS2jAXWpiotbZVwRyp23KGh22jyPT77TI2Q1HefKoy4jXcDdlPpggjRQfiwR2chSZHBL4BQ7Zodi2jbRtU2U3G2Kpp3JeIMXP2VPYVV1iAjplOpRqLYQfAMRrlPv1AJpjSVHZA'
+            });
+            app.addLayers();
+        });
+    </script>
+</body>
+</html>
+CSS:

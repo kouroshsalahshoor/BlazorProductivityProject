@@ -46,6 +46,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "BlazorDateRangePicker": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
             "BlazorInputFile": {
               "target": "Package",
               "version": "[0.2.0, )"
@@ -69,6 +73,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

@@ -1,4 +1,8 @@
 ﻿html, body {
     font-family: 'Shabnam';
-    text-align:right;
+    text-align: right;
+}
+
+.daterangepicker {
+    font-family: 'Shabnam';
 }

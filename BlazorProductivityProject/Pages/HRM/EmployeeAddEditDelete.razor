@@ -1,0 +1,248 @@
+﻿@page "/employee/add"
+@page "/employee/edit/{Id}"
+
+@inherits OwningComponentBase<ApplicationDbContext>
+
+<section class="employee-edit">
+    @if (!_saved)
+    {
+        <div class="alert @_statusClass">@_message</div>
+
+        <h1 class="page-title">@(_model.Id == 0 ? "Add new Employee" : $"Editing {@_model.FirstName} {@_model.LastName}") </h1>
+
+        <EditForm Model="@_model" OnValidSubmit="@HandleValidSubmit">
+
+            <DataAnnotationsValidator />
+            @*<ValidationSummary />*@
+            <div class="form-group row">
+                <label for="lastName" class="col-sm-3">Last name: </label>
+                <InputText id="lastName" @bind-Value="@_model.LastName" class="form-control col-sm-8" placeholder="Enter last name"></InputText>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-8"><ValidationMessage For="@(() => _model.LastName)" /></div>
+            </div>
+
+            <div class="form-group row">
+                <label for="firstName" class="col-sm-3">First name: </label>
+                <InputText id="firstName" class="form-control col-sm-8" @bind-Value="@_model.FirstName" placeholder="Enter first name"></InputText>
+                <div class="col-sm-3"></div>
+                <ValidationMessage class="col-sm-8" For="@(() => _model.FirstName)" />
+            </div>
+
+
+            <div class="form-group row">
+                <label for="birthdate" class="col-sm-3">Birthdate: </label>
+                <InputDate id="birthdate" class="form-control col-sm-8" @bind-Value="@_model.BirthDate" placeholder="Enter birthdate"></InputDate>
+
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-3">Email: </label>
+                <InputText id="email" class="form-control col-sm-8" @bind-Value="@_model.Email" placeholder="Enter email"></InputText>
+                <div class="col-sm-3"></div>
+                <ValidationMessage class="col-sm-8" For="@(() => _model.Email)" />
+            </div>
+
+            <div class="form-group row">
+                <label for="street" class="col-sm-3">Street: </label>
+                <InputText id="street" class="form-control col-sm-8" @bind-Value="@_model.Street" placeholder="Enter street"></InputText>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="zip" class="col-sm-3">Zip code: </label>
+                <InputText id="zip" class="form-control col-sm-8" @bind-Value="@_model.Zip" placeholder="Enter zip code"></InputText>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="city" class="col-sm-3">City: </label>
+                <InputText id="city" class="form-control col-sm-8" @bind-Value="@_model.City" placeholder="Enter city"></InputText>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="country" class="col-sm-3">Country: </label>
+                <InputSelect id="country" class="form-control col-sm-8" @bind-Value="@_selectedCountryId">
+                    @foreach (var country in _countries)
+                        {
+                        <option value="@country.Id">@country.Name</option>
+                        }
+
+                </InputSelect>
+            </div>
+
+            <div class="form-group row">
+                <label for="phonenumber" class="col-sm-3">Phone number: </label>
+                <InputText id="phonenumber" class="form-control col-sm-8" @bind-Value="@_model.PhoneNumber" placeholder="Enter phone number"></InputText>
+            </div>
+
+            <div class="form-group row">
+                <label for="longitude" class="col-sm-3">Longitude: </label>
+                <InputNumber id="longitude" class="form-control col-sm-8" @bind-Value="@_model.Longitude"></InputNumber>
+            </div>
+
+            <div class="form-group row">
+                <label for="latitude" class="col-sm-3">Latitude: </label>
+                <InputNumber id="latitude" class="form-control col-sm-8" @bind-Value="@_model.Latitude"></InputNumber>
+            </div>
+
+            <div class="form-group row">
+                <label for="smoker" class="col-sm-3">Smoker: </label>
+                <InputCheckbox id="smoker" @bind-Value="@_model.Smoker"></InputCheckbox>
+            </div>
+
+            <div class="form-group row">
+                <label for="jobcategory" class="col-sm-3">Job category: </label>
+                <InputSelect id="jobcategory" class="form-control col-sm-8" @bind-Value="@_selectedJobCategoryId">
+                    @foreach (var jobCategory in _jobCategories)
+                        {
+                        <option value="@jobCategory.Id">@jobCategory.Name</option>
+                        }
+                </InputSelect>
+            </div>
+
+            <div class="form-group row">
+                <label for="gender" class="col-sm-3">Gender: </label>
+                <InputSelect id="gender" class="form-control col-sm-8" @bind-Value=@_model.Gender>
+                    <option value="@(Gender.Male)">Male</option>
+                    <option value="@(Gender.Female)">Female</option>
+                    <option value="@(Gender.Other)">Other</option>
+                </InputSelect>
+            </div>
+
+            <div class="form-group row">
+                <label for="maritalstatus" class="col-sm-3">Marital status: </label>
+                <InputSelect id="maritalstatus" class="form-control col-sm-8" @bind-Value=@_model.MaritalStatus>
+                    <option value="@(MaritalStatus.Single)">Single</option>
+                    <option value="@(MaritalStatus.Married)">Married</option>
+                    <option value="@(MaritalStatus.Other)">Other</option>
+                </InputSelect>
+            </div>
+
+            <div class="form-group row">
+                <label for="joineddate" class="col-sm-3">Joined on: </label>
+                <InputDate id="joineddate" class="form-control col-sm-8" @bind-Value="@_model.JoinedDate" placeholder="Enter date joined"></InputDate>
+            </div>
+
+            <div class="form-group row">
+                <label for="exitdate" class="col-sm-3">Left on: </label>
+                <InputDate id="exitdate" class="form-control col-sm-8" @bind-Value="@_model.ExitDate" placeholder="Enter exit date"></InputDate>
+            </div>
+
+            <div class="form-group row">
+                <label for="comment" class="col-sm-3">Comment: </label>
+                <InputTextArea id="comment" class="form-control col-sm-8" @bind-Value="@_model.Comment" placeholder="Enter comment"></InputTextArea>
+                <div class="col-sm-3"></div>
+                <ValidationMessage class="col-sm-8" For="@(() => _model.Comment)" />
+            </div>
+
+            <button type="submit" class="btn btn-primary edit-btn">Save employee</button>
+
+            @if (_model.Id > 0)
+            {
+                <a class="btn btn-danger text-light" @onclick="@DeleteEmployee">
+                    Delete
+                </a>
+            }
+
+        </EditForm>
+    }
+    else
+    {
+        <div class="alert @_statusClass">@_message</div>
+        <a class="btn btn-outline-primary" @onclick="@NavigateToList">Back to overview</a>
+    }
+</section>
+
+@code{
+    ApplicationDbContext _db => Service;
+    [Parameter] public string Id { get; set; }
+
+    [Inject] public NavigationManager _NavigationManager { get; set; }
+
+    protected Employee _model { get; set; } = new Employee();
+    protected List<Country> _countries { get; set; } = new List<Country>();
+    protected List<JobCategory> _jobCategories { get; set; } = new List<JobCategory>();
+
+    protected string _selectedCountryId = string.Empty;
+    protected string _selectedJobCategoryId = string.Empty;
+
+    protected string _message = string.Empty;
+    protected string _statusClass = string.Empty;
+    protected bool _saved;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _saved = false;
+        _countries = await _db.Countries.ToListAsync();
+        _jobCategories = await _db.JobCategories.ToListAsync();
+
+        int.TryParse(Id, out var employeeId);
+
+        if (employeeId == 0) //new employee is being created
+        {
+            //add some defaults
+            _model = new Employee { CountryId = 1, JobCategoryId = 1, BirthDate = DateTime.Now, JoinedDate = DateTime.Now };
+        }
+        else
+        {
+            _model = await _db.Employees.FindAsync(employeeId);
+        }
+
+        _selectedCountryId = _model.CountryId.ToString();
+        _selectedJobCategoryId = _model.JobCategoryId.ToString();
+    }
+
+    protected async Task HandleValidSubmit()
+    {
+        _saved = false;
+
+        _model.CountryId = int.Parse(_selectedCountryId);
+        _model.JobCategoryId = int.Parse(_selectedJobCategoryId);
+
+        if (_model.Id == 0) //new
+        {
+            await _db.Employees.AddAsync(_model);
+        }
+        else
+        {
+            _db.Employees.Update(_model);
+        }
+
+        var result = await _db.SaveChangesAsync();
+        if (result > 0)
+        {
+            _statusClass = "alert-success";
+            _message = "Save was successful.";
+            _saved = true;
+        }
+        else
+        {
+            _statusClass = "alert-danger";
+            _message = "Something went wrong saving the item. Please try again.";
+        }
+    }
+
+    protected async Task DeleteEmployee()
+    {
+        _saved = false;
+
+        _db.Employees.Remove(_model);
+        var result = await _db.SaveChangesAsync();
+        if (result > 0)
+        {
+            _statusClass = "alert-success";
+            _message = "Delete was successful.";
+            _saved = true;
+        }
+        else
+        {
+            _statusClass = "alert-danger";
+            _message = "Something went wrong deleting the item. Please try again.";
+        }
+    }
+
+    protected void NavigateToList()
+    {
+        _NavigationManager.NavigateTo("/employees");
+    }
+}

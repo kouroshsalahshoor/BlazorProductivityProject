@@ -1,0 +1,101 @@
+﻿@page "/employees"
+@inherits OwningComponentBase<ApplicationDbContext>
+
+<style>
+    .quick-btn {
+        background-color: #23cfa7;
+        border-color: #23cfa7;
+        border-radius: 50%;
+    }
+
+        .quick-btn:hover, .quick-btn:active {
+            color: #fff;
+            background-color: #a593c2 !important;
+            border-color: #a593c2 !important;
+        }
+
+    .quick-add-btn {
+        font-size: 36px;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+</style>
+
+<h1 class="page-title">All employees</h1>
+
+@if (_items == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @*<th></th>*@
+                <th>Employee ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in _items)
+            {
+                <tr>
+                    @*<td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{item.EmployeeId}-small.jpg")" class="rounded-circle" /></td>*@
+                    <td>@item.Id</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>
+                        <a href="@($"employee/{item.Id}")" class="btn btn-info table-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a href="@($"employee/edit/{item.Id}")" class="btn btn-primary table-btn">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a @onclick="@(async () => await Delete(item))" class="btn btn-danger table-btn text-light">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button @onclick="@Show" class="btn btn-dark quick-btn quick-add-btn">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+
+<DialogComponent @ref="_dialog" CloseEventCallback="@OnDialogClose" Db="_db"></DialogComponent>
+
+@code {
+    ApplicationDbContext _db => Service;
+
+    private IEnumerable<Employee> _items { get; set; }
+
+    protected DialogComponent _dialog { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _items = await _db.Employees.ToListAsync();
+    }
+
+    public async Task OnDialogClose()
+    {
+        _items = await _db.Employees.ToListAsync();
+        StateHasChanged();
+    }
+    protected void Show()
+    {
+        _dialog.Show();
+    }
+    protected async Task Delete(Employee item)
+    {
+        _db.Employees.Remove(item);
+        await _db.SaveChangesAsync();
+
+        _items = await _db.Employees.ToListAsync();
+        StateHasChanged();
+    }
+}

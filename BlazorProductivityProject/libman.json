@@ -9,6 +9,10 @@
     {
       "library": "shabnam-font@5.0.1",
       "destination": "wwwroot/lib/shabnam-font/"
+    },
+    {
+      "library": "font-awesome@5.14.0",
+      "destination": "wwwroot/lib/font-awesome/"
     }
   ]
 }

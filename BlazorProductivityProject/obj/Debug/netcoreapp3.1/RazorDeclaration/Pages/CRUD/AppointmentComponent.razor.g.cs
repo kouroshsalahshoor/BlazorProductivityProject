@@ -125,6 +125,13 @@ using Microsoft.AspNetCore.Hosting;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 21 "C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\_Imports.razor"
+using BlazorDateRangePicker;
+
+#line default
+#line hidden
+#nullable disable
     public partial class AppointmentComponent : OwningComponentBase<ApplicationDbContext>
     {
         #pragma warning disable 1998
