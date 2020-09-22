@@ -21,6 +21,7 @@
   <li>Dropdowns with Enums and lists</li>
   <li>Checkbox binding</li>
   <li>Collapsable Menu</li>
+  <li>Radzen Tree</li>
   
   <li>CRUD with modal - form validation - javascript native alert and confirm</li>
   <li>File upload (Steve Sanderson) on server - FileService - all image types</li>
