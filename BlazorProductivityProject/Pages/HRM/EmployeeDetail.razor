@@ -1,4 +1,4 @@
-﻿@page "/employee/{EmployeeId}"
+﻿@page "/employee/details/{EmployeeId:int}"
 @inherits OwningComponentBase<ApplicationDbContext>
 
 <h1 class="page-title">Details for @_model.FirstName @_model.LastName</h1>
@@ -110,13 +110,13 @@
         </div>
 
         <div class="col-xs-12 col-sm-4">
-            <Map Zoom="18" Lat="35.7892" Lng="51.4890"></Map>
+            <MapComponent Zoom="18" Lat="35.7892" Lng="51.4890"></MapComponent>
         </div>
     </div>
 </div>
 
 @code{
-    [Parameter] public string EmployeeId { get; set; }
+    [Parameter] public int EmployeeId { get; set; }
 
     ApplicationDbContext _db => Service;
 
@@ -128,7 +128,7 @@
     protected override async Task OnInitializedAsync()
     {
         _items = await _db.Employees.ToListAsync();
-        _model = _items.FirstOrDefault(e => e.Id == int.Parse(EmployeeId));
+        _model = _items.FirstOrDefault(e => e.Id == EmployeeId);
     }
 
 }

@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using BlazorProductivityProject.Areas.Identity;
 using BlazorProductivityProject.Data;
 using BlazorProductivityProject.Services;
+using Rotativa.AspNetCore;
 
 namespace BlazorProductivityProject
 {
@@ -81,6 +82,8 @@ namespace BlazorProductivityProject
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
+
+            RotativaConfiguration.Setup(env.WebRootPath, "Rotativa");
         }
     }
 }

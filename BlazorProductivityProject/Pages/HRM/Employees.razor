@@ -37,7 +37,11 @@ else
                 <th>Employee ID</th>
                 <th>First name</th>
                 <th>Last name</th>
-                <th></th>
+                <th>
+                    <a href="@($"employee/add")" class="btn btn-outline-success" style="border:0;" title="add">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -49,15 +53,15 @@ else
                     <td>@item.FirstName</td>
                     <td>@item.LastName</td>
                     <td>
-                        <a href="@($"employee/{item.Id}")" class="btn btn-info table-btn">
+                        <a href="@($"employee/details/{item.Id}")" class="btn btn-outline-info" style="border:0;" title="details">
                             <i class="fas fa-info-circle"></i>
                         </a>
-                        <a href="@($"employee/edit/{item.Id}")" class="btn btn-primary table-btn">
+                        <a href="@($"employee/edit/{item.Id}")" class="btn btn-outline-primary" style="border:0;" title="edit">
                             <i class="fas fa-edit"></i>
                         </a>
-                        <a @onclick="@(async () => await Delete(item))" class="btn btn-danger table-btn text-light">
+                        <button @onclick="@(async () => await Delete(item))" class="btn btn-outline-danger" style="border:0;" title="delete">
                             <i class="fas fa-trash-alt"></i>
-                        </a>
+                        </button>
                     </td>
                 </tr>
             }

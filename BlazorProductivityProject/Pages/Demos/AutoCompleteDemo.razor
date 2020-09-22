@@ -1,0 +1,69 @@
+﻿@page "/AutoCompleteDemo"
+@inherits OwningComponentBase<ApplicationDbContext>
+@*https://github.com/Blazored/Typeahead*@
+@*https://chrissainty.com/getting-started-with-blazored-typeahead/*@
+
+<h3>AutoCompleteDemo</h3>
+
+<p>@_count</p>
+
+<BlazoredTypeahead SearchMethod="Search" @bind-Value="_selectedItem">
+    <SelectedTemplate>
+        @context.Name
+    </SelectedTemplate>
+    <ResultTemplate>
+        @context.Name <strong>@context.Price</strong>
+    </ResultTemplate>
+</BlazoredTypeahead>
+
+@if (_selectedItem != null)
+{
+    <p>Selected item is: @_selectedItem.Name</p>
+}
+
+@*
+    <EditForm Model="@_model" OnValidSubmit="validSubmit" OnInvalidSubmit="inValidSubmit">
+        <DataAnnotationsValidator />
+
+        <BlazoredTypeahead SearchMethod="Search"
+                           @bind-Value="_selectedItem"
+                           Placeholder="Search by first name...">
+            <SelectedTemplate Context="item">
+                @item.Name
+            </SelectedTemplate>
+            <ResultTemplate Context="item">
+                @item.Name (@item.Price)
+            </ResultTemplate>
+        </BlazoredTypeahead>
+        @*<ValidationMessage For="@(() => _selectedItem)" />*@
+@*
+    <button class="btn btn-primary" type="submit">Submit</button>
+    </EditForm>
+*@
+@code {
+    ApplicationDbContext _db => Service;
+
+    List<Product> _filteredItems;
+    Product _selectedItem;
+    Product _model = new Product();
+
+    int _count;
+
+    private async Task<IEnumerable<Product>> Search(string searchText)
+    {
+        _filteredItems = await _db.Products.Where(x => x.Name.ToLower().Contains(searchText.ToLower())).ToListAsync();
+        _count = _filteredItems.Count();
+        return await Task.FromResult(_filteredItems);
+    }
+
+    private void validSubmit()
+    {
+
+    }
+
+    private void inValidSubmit()
+    {
+
+    }
+
+}

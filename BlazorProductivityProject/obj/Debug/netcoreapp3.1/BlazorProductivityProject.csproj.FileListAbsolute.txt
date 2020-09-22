@@ -91,11 +91,8 @@ C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProjec
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.pdb
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.genruntimeconfig.cache
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\libman.json
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\Bindings.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ComponentBaseDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ComponentBaseWithPartialDemo.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DefaultBlazorComponents\Counter.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DefaultBlazorComponents\FetchData.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\RoutingDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\QueryStringDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ParentChildDemo\ChildComponent.razor.g.cs
@@ -121,6 +118,31 @@ C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProjec
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\BlazorDateRangePickerDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorDateRangePicker.dll
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\EmployeeAddEditDelete.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\DialogComponent.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\MapDemo.cshtml.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DefaultBlazorPages\Counter.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DefaultBlazorPages\FetchData.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\BindingsDemo.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\MapComponent.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\AutoCompleteDemo.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Blazored.Typeahead.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Rotativa.AspNetCore.dll
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.csproj.CoreCompileInputs.cache
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.MvcApplicationPartsAssemblyInfo.cache
@@ -135,9 +157,10 @@ C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProjec
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductItem.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\Products.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductsGallery.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\DefaultBlazorComponents\Counter.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\DefaultBlazorComponents\FetchData.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\Bindings.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\DefaultBlazorPages\Counter.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\DefaultBlazorPages\FetchData.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\AutoCompleteDemo.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\BindingsDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\BlazorDateRangePickerDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ComponentBaseDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ComponentBaseWithPartialDemo.razor.g.cs
@@ -150,18 +173,206 @@ C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProjec
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ParentChildDemo\ParentComponent.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\QueryStringDemo.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\RoutingDemo.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\DialogComponent.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\EmployeeAddEditDelete.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\EmployeeDetail.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\Employees.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\MapComponent.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\LoginDisplay.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\DialogComponent.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\DialogComponent.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\MapDemo.cshtml.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\Map.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\Map.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\k.salahshoor\Desktop\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\Pdf\PdfDemo.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\appsettings.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\libman.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.StaticWebAssets.xml
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.exe
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.deps.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.runtimeconfig.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.runtimeconfig.dev.json
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.pdb
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.Views.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorProductivityProject.Views.pdb
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorDateRangePicker.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Blazored.Typeahead.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\BlazorInputFile.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Rotativa.AspNetCore.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.csprojAssemblyReference.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.AssemblyInfoInputs.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.AssemblyInfo.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.RazorComponent.input.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\AppointmentBooked.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\AppointmentComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\AppointmentsPage.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\Categories.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductAppointment.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductDetailsComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductItem.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\Products.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CRUD\ProductsGallery.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DefaultBlazorPages\Counter.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\DefaultBlazorPages\FetchData.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\AutoCompleteDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\BindingsDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\BlazorDateRangePickerDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ComponentBaseDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ComponentBaseWithPartialDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\FileUploads\DragDropViewer.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\FileUploads\ImageFile.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\FileUploads\MultiFiles.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\FileUploads\Native.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\FileUploads\SingleFile.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ParentChildDemo\ChildComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\ParentChildDemo\ParentComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\QueryStringDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\RoutingDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\DialogComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\EmployeeAddEditDelete.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\EmployeeDetail.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\Employees.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\HRM\MapComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.TagHelpers.input.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.TagHelpers.output.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.RazorCoreGenerate.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\LogOut.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Shared\_LoginPartial.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\MapDemo.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\Pdf\PdfDemo.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.RazorAssemblyInfo.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.RazorAssemblyInfo.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.RazorTargetAssemblyInfo.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.RazorTargetAssemblyInfo.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.Views.pdb
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.csproj.CopyComplete
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\staticwebassets\BlazorProductivityProject.StaticWebAssets.Manifest.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\staticwebassets\BlazorProductivityProject.StaticWebAssets.xml
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.pdb
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.genruntimeconfig.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\Radzen.Blazor.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.csproj.CoreCompileInputs.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.MvcApplicationPartsAssemblyInfo.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\BlazorProductivityProject.MvcApplicationPartsAssemblyInfo.cache
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Demos\TreeDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\RazorDeclaration\BlazorProductivityProject.dll
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\AppointmentBooked.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\AppointmentComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\AppointmentsPage.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\Categories.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductAppointment.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductDetailsComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductItem.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\Products.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD\ProductsGallery.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\DefaultBlazorPages\Counter.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\DefaultBlazorPages\FetchData.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\AutoCompleteDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\BindingsDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\BlazorDateRangePickerDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ComponentBaseDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ComponentBaseWithPartialDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\FileUploads\DragDropViewer.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\FileUploads\ImageFile.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\FileUploads\MultiFiles.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\FileUploads\Native.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\FileUploads\SingleFile.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ParentChildDemo\ChildComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\ParentChildDemo\ParentComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\QueryStringDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\RoutingDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Demos\TreeDemo.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\DialogComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\EmployeeAddEditDelete.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\EmployeeDetail.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\Employees.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\HRM\MapComponent.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\LoginDisplay.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+D:\salahshoor\) Programming\$ ))) Blazor\demos $$$\BlazorProductivityProject\BlazorProductivityProject\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs

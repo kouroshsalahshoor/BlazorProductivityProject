@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\k.salahshoor\\Desktop\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj": {}
+    "D:\\salahshoor\\) Programming\\$ ))) Blazor\\demos $$$\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\k.salahshoor\\Desktop\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj": {
+    "D:\\salahshoor\\) Programming\\$ ))) Blazor\\demos $$$\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\k.salahshoor\\Desktop\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj",
+        "projectUniqueName": "D:\\salahshoor\\) Programming\\$ ))) Blazor\\demos $$$\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj",
         "projectName": "BlazorProductivityProject",
-        "projectPath": "C:\\Users\\k.salahshoor\\Desktop\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj",
+        "projectPath": "D:\\salahshoor\\) Programming\\$ ))) Blazor\\demos $$$\\BlazorProductivityProject\\BlazorProductivityProject\\BlazorProductivityProject.csproj",
         "packagesPath": "C:\\Users\\k.salahshoor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\k.salahshoor\\Desktop\\BlazorProductivityProject\\BlazorProductivityProject\\obj\\",
+        "outputPath": "D:\\salahshoor\\) Programming\\$ ))) Blazor\\demos $$$\\BlazorProductivityProject\\BlazorProductivityProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[0.2.0, )"
             },
+            "Blazored.Typeahead": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.7, )"
@@ -73,6 +77,14 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[2.14.3, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.0-beta, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -97,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
